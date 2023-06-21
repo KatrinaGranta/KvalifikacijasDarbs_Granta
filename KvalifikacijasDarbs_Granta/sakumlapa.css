@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300&display=swap');
+
+:root{
+    --main-color:#6e8ae8;
+    --black:#555;
+    --light-color:#777;
+    --bg:#e9f3fc;
+    --border:.1rem solid rgba(0,0,0,.1);
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    outline: none;
+    border:none;
+    text-decoration: none;
+    transition: all .3s ease-out;
+}
+
+*::selection{
+    background:var(--main-color);
+    color:#fff;
+}
+
+html{
+    font-size: 62%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+}
+
+
+html::-webkit-scrollbar{
+    width:1.3rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: var(--light-color);
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--main-color);
+} 
+
+
+#informacija .row{
+    margin-right: 10rem;
+    margin-top: 10rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+#informacija .row .image{
+    flex:1 1 15rem;
+    padding: 2rem;
+}
+
+#informacija .row .image img{
+    width: 90%;
+}
+
+#informacija .row .content{
+    flex:1 1 45rem;
+}
+
+#informacija .row .content .title{
+    font-size:3rem;
+    color:var(--black);
+}
+
+#informacija .row .content p{
+    font-size:2rem;
+    color: black;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+#informacija .row .content .icons-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
+    padding-top: 2rem;
+}
+
+#informacija .row .content .icons-container .icons{
+    flex:1 1 15rem;
+    border-radius: .5rem;
+    border:var(--border);
+    padding:1.5rem;
+    text-align: center;
+}
+
+#informacija .row .content .icons-container .icons i{
+    border-radius: 50%;
+    background: var(--bg);
+    color:var(--main-color);
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+}
+
+#informacija .row .content .icons-container .icons h3{
+    color:var(--light-color);
+    font-size: 1.6rem;
+    padding-top: 1rem;
+} 
+#atsauksme .row {
+    margin-left: 3rem;
+    margin-top: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: stretch;
+  }
+  
+  #atsauksme .form-container,
+  #atsauksme .review-container {
+    flex: 1 1 45rem;
+  }
+  
+  
+  #atsauksme .row form .box {
+    margin: 0.7rem 0;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    text-transform: none;
+    width: 50%;
+  }
+  
+  #atsauksme .row form .box:focus {
+    background: var(--bg);
+  }
+  
+  #atsauksme .row form textarea {
+    height: 20rem;
+    resize: none;
+  }
+  
+  #atsauksme .row form .btn:hover {
+    background: var(--black);
+  }
+  
+  #atsauksme h1 {
+    margin-top: 3rem;
+    font-size: 3rem;
+    color: var(--black);
+  }
+  
+  #atsauksme .btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.8rem 3rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    color: #fff;
+    background: var(--main-color);
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+  }
+  *{
+	margin: 0;
+	padding: 0;
+}
+
+.review-container {
+    margin-bottom: 3rem;
+    width: 300px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .review-container:hover {
+    box-shadow: 0 0 20px #00000010;
+    transform: scale(1.1);
+  }
+
+  .review-container .review-box {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+  }

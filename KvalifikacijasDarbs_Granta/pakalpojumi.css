@@ -1,0 +1,114 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300&display=swap');
+
+:root{
+    --main-color:#6e8ae8;
+    --black:#555;
+    --light-color:#777;
+    --bg:#e9f3fc;
+    --border:.1rem solid rgba(0,0,0,.1);
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    outline: none;
+    border:none;
+    text-decoration: none;
+    transition: all .3s ease-out;
+}
+
+*::selection{
+    background:var(--main-color);
+    color:#fff;
+}
+
+html{
+    font-size: 62%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+}
+
+
+html::-webkit-scrollbar{
+    width:1.3rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: var(--light-color);
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--main-color);
+}
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 1.5rem;
+  }
+  
+  @media (max-width: 40rem) {
+    .box-container {
+      grid-template-columns: 1fr;
+    }
+  }
+
+.box-container .box{
+    text-align: center;
+    border:var(--border);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    padding:4rem 2rem;
+}
+
+.box-container .box img{
+    height: 50rem;
+    width: 100%;
+}
+
+.box-container .box h3{
+    color:var(--black);
+    font-size: 2.5rem;
+    padding-top: 1.5rem;
+}
+
+.box-container .box p{
+    color:var(--light-color);
+    font-size: 1.5rem;
+    padding:1rem 0;
+    line-height: 1.8;
+}
+
+h1{
+  text-align: center;
+  padding-bottom: 3rem;
+  font-size: 4rem;
+  color:var(--black);
+}
+
+h1 span{
+  color:var(--main-color);
+  border-radius: .5rem;
+  background: var(--bg);
+  padding:0 1.5rem;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 5rem;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    color: #111111;
+    background: #cbd1f3;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+}
+.btn:hover{
+  background:var(--black);
+}
+

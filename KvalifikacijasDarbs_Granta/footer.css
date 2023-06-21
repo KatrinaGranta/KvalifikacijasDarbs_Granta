@@ -1,0 +1,14 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+footer {
+    background: #6e8ae8;
+    color: #555;
+    text-align: center;
+    padding: 4rem;
+    font-size: 2rem;
+    margin-top: auto;
+}
